@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Requirements:
+1. The main screen will then need to present with the Pokemon name and image. You may use any layout.
+2. is redirected to a detail screen explained on step 3
+3. The user should see a minimum of six descriptions with info plus your image. You may use any layout.
+4. Use pagination
+5. Unit & UI tests
+6. Adapt UI so it can be displayed in different screen sizes (e.g Mobile)
+
+
+## Solution Explanation
+This project uses React as framework, and i'm using React Bootstrap for the UI and React Router for navigation. I tried first to "check" all the "mandatory" requirements, and then, add as many features as possible or improve the code for the already existing features. 
+
+With React, i made use of Hooks, and the state is stored on the main ``<App/>`` component. The size of this project didn't require any complex state managment library like Redux or Mobx. For the UI i used Boostrap, as it already provides some baseline CSS and Componetns, and made the development of this project alot faster. I also used React Router to trigger a screen change, when clicking on a pokemon on the list. For the requests i wrote a class that provides static methods to access the PokeAPI, and it's the app itself that handles the pagination (via URL parameters).
 
 ## Available Scripts
 
@@ -36,33 +48,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
