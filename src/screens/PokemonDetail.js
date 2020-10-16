@@ -34,14 +34,10 @@ export function PokemonDetail(props) {
 
         return (
             <Container>
-                {
-                    console.log(pokemon.name)
-                }
-
                 <Breadcrumb>
                     <Link style={{ marginRight: 5 }} to="/">
                         Home /
-            </Link>
+                    </Link>
                     <Breadcrumb.Item active>{pokemon.name}</Breadcrumb.Item>
                 </Breadcrumb>
 
