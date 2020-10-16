@@ -1,12 +1,29 @@
 import React, { useEffect, useState } from 'react';
+import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { DataFetcher } from '../modules/DataFetcher';
 
-export function PokemonListItem(props){
-    let {data} = props;
-
- return(<div className="pokemon-list">
-
-     <img src={data.sprites.front_default}></img>
-     <p >{data.name}</p>
- </div>)
+export function PokemonListItem(props) {
+    let { data } = props;
+    let [firstLetter,...restOfThem] = data.name.split("");
+    let upperCaseName = [firstLetter.toUpperCase(), ...restOfThem].join("");
+    return (
+        <Card style={{ marginBottom: '20px'}}>
+            <Card.Img style={{ maxWidth: '200px',margin:"auto"}} variant="top" src={data.sprites.other["official-artwork"].front_default} />
+            <Card.Body>
+                <Card.Title>{upperCaseName}</Card.Title>
+                <Link to={`/pokemon/${data.id}`}>
+                    <Button variant="primary">Details</Button>
+                </Link>
+            </Card.Body>
+        </Card>
+    )
 }
+
+/*
+ <div className="pokemon-list">
+            <img src={data.sprites.front_default}></img>
+
+        </div>
+
+*/
