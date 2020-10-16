@@ -23,7 +23,7 @@ export function PokemonDetail(props) {
     let renderedComponent = function () {
 
         return (
-            <Container>
+            <Container data-testid="pokemon_detail">
                 <Breadcrumb>
                     <Link style={{ marginRight: 5 }} to="/">
                         Home /

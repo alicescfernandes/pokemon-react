@@ -3,7 +3,7 @@ import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export function Error(props) {
-    return (<Card
+    return (<Card data-testid="error"
         bg={"danger"}
         text={'light'}
     >

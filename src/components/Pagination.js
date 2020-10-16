@@ -6,7 +6,7 @@ function Pagination(props) {
     let {offset, totalElements} = props;
 
     return (
-        <ul className="pagination">
+        <ul data-testid="pagination"  className="pagination">
             <li className={"page-item " + (offset === 0 ? "disabled" : "")}>
                 <Link className="page-link" role="button" to={"/?offset=0"}>«
             </Link>
