@@ -10,7 +10,9 @@
 ## Solution Explanation
 This project uses React as framework, and i'm using React Bootstrap for the UI and React Router for navigation. I tried first to "check" all the "mandatory" requirements, and then, add as many features as possible or improve the code for the already existing features. 
 
-With React, i made use of Hooks, and the state is stored on the main ``<App/>`` component. The size of this project didn't require any complex state managment library like Redux or Mobx. For the UI i used Boostrap, as it already provides some baseline CSS and Componetns, and made the development of this project alot faster. I also used React Router to trigger a screen change, when clicking on a pokemon on the list. For the requests i wrote a class that provides static methods to access the PokeAPI, and it's the app itself that handles the pagination (via URL parameters). I also wrote some utility code to manipulate some strings in order to transform names and access the query parameters
+With React, i made use of Hooks, and the state is stored on the main ``<App/>`` component. The size of this project didn't require any complex state managment library like Redux or Mobx. For the UI i used Boostrap, as it already provides some baseline CSS and Componetns, and made the development of this project alot faster. I also used React Router to trigger a screen change, when clicking on a pokemon on the list. For the requests i wrote a class that provides static methods to access the PokeAPI, and it's the app itself that handles the pagination (via URL parameters). I also wrote some utility code to manipulate some strings in order to transform names and access the query parameters.
+
+I did my best to write meaningfull tests, but testing is so new to me that i had to plunge on the testing library docs, but i wrote four tests that test if the components are being rendered on the page
 
 ## Setup
 
