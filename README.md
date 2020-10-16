@@ -10,7 +10,36 @@
 ## Solution Explanation
 This project uses React as framework, and i'm using React Bootstrap for the UI and React Router for navigation. I tried first to "check" all the "mandatory" requirements, and then, add as many features as possible or improve the code for the already existing features. 
 
-With React, i made use of Hooks, and the state is stored on the main ``<App/>`` component. The size of this project didn't require any complex state managment library like Redux or Mobx. For the UI i used Boostrap, as it already provides some baseline CSS and Componetns, and made the development of this project alot faster. I also used React Router to trigger a screen change, when clicking on a pokemon on the list. For the requests i wrote a class that provides static methods to access the PokeAPI, and it's the app itself that handles the pagination (via URL parameters).
+With React, i made use of Hooks, and the state is stored on the main ``<App/>`` component. The size of this project didn't require any complex state managment library like Redux or Mobx. For the UI i used Boostrap, as it already provides some baseline CSS and Componetns, and made the development of this project alot faster. I also used React Router to trigger a screen change, when clicking on a pokemon on the list. For the requests i wrote a class that provides static methods to access the PokeAPI, and it's the app itself that handles the pagination (via URL parameters). I also wrote some utility code to manipulate some strings in order to transform names and access the query parameters
+
+## Setup
+
+1. Clone this repository   
+    ```sh
+    https://github.com/alicescfernandes/pokemon-react.git
+    ```
+
+
+2. Install the packages  
+    ```sh 
+    yarn
+    ```
+    or
+
+    ```sh
+    npm install
+    ```
+
+
+3. Start the development server with  
+    ```sh
+    yarn start
+    ```
+    or
+
+    ```sh
+    npm run start
+    ```
 
 ## Available Scripts
 

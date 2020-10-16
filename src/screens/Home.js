@@ -21,7 +21,6 @@ export function Home() {
         DataFetcher.fetchAllPokemons(6, offset).then((data) => {
             setTotalElements(data.count);
             setItems(data.results);
-            console.log((totalElements/6)-6)
         });
     }, [offset,totalElements])
 
