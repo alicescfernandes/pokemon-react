@@ -3,4 +3,7 @@ function normalize(text){
     return [firstLetter.toUpperCase(), ...restOfThem].join("");
 }
 
-export {normalize}
+function parseQueryString(url) {
+    return new URLSearchParams(url);
+}
+export { normalize,parseQueryString }

@@ -1,28 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import { Home } from "./screens/Home";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import { DataFetcher } from './modules/DataFetcher';
 import { PokemonDetail } from './screens/PokemonDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-  let [data, setData] = useState({});
-
-
-  useEffect(function(){
-      DataFetcher.fetchAllPokemons().then((data) => {
-        //setData(data)
-        //setItems(data.results)
-      });
-  },[]);
-
-
   return (
     <div className="App">
       <Router>

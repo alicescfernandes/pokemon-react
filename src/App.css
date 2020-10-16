@@ -17,10 +17,11 @@ h6 {
   color: grey;
   margin-bottom: 12px;
 }
+
 [class*="col"] {
   margin-bottom: 20px;
 }
-´
+
 .pagination{
   justify-content: center;
 }
